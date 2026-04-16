@@ -22,6 +22,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://transport-backend-production-9b45.up.railway.app"
+]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
